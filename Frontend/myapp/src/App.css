@@ -1,0 +1,70 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.btn{
+  background-color: rgb(61, 61, 61);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    transition: background-color 0.3s ease;
+
+}
+.btn:hover{
+  background-color: rgb(104, 104, 104);
+}
+.btn:disabled{
+  background-color: rgb(0, 0, 0);
+  cursor: not-allowed;
+}
+.like{
+  background-color: rgb(61, 61, 61);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  height: 35px;
+  transition: background-color 0.3s ease;
+}
+.like:hover{
+  background-color: rgb(104, 104, 104);
+}
+.like:disabled{
+  background-color: rgb(0, 0, 0);
+  cursor: not-allowed;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: rgb(112, 112, 112);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
